@@ -1,0 +1,12 @@
+use_frameworks!
+platform :ios, '11.0'
+
+target 'NonfullscreenPresenter_Example' do
+  pod 'NonfullscreenPresenter', :path => '../'
+
+  target 'NonfullscreenPresenter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

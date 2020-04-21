@@ -1,0 +1,19 @@
+language: swift
+osx_image: xcode11.3
+podfile: Example/Podfile
+
+env:
+  - DESTINATION='platform=iOS Simulator,name=iPhone 8'
+  - WORKSPACE_NAME='Example/NonfullscreenPresenter.xcworkspace'
+  - SCHEME_NAME='NonfullscreenPresenter-Example'
+
+- before_install:
+  - pod install --project-directory=Example
+
+script:
+  - xcodebuild clean -workspace "$WORKSPACE_NAME" -scheme "$SCHEME_NAME" | xcpretty
+  - xcodebuild -workspace "$WORKSPACE_NAME" -scheme "$SCHEME_NAME" -destination "$DESTINATION" | xcpretty -s
+
+branches:
+  only:
+    - master

@@ -1,0 +1,16 @@
+PODS:
+  - NonfullscreenPresenter (0.1.0)
+
+DEPENDENCIES:
+  - NonfullscreenPresenter (from `../`)
+
+EXTERNAL SOURCES:
+  NonfullscreenPresenter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NonfullscreenPresenter: a1965386efec3085d00a5388f17c6333dcdb7f8c
+
+PODFILE CHECKSUM: 464d49378bb57d3ec2ccce4884dd9f98fe84e46a
+
+COCOAPODS: 1.9.1
